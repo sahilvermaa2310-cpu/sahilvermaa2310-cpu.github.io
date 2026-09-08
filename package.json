@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio for Sahil Verma - Data Analyst / Data Science",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-projects.js",
+    "dev": "npm run generate && vite --port 5173 --host",
+    "build": "node scripts/generate-projects.js && vite build && node scripts/post-build.js",
+    "preview": "vite preview --port 4173",
+    "serve": "vite preview --port 4173 --host"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  },
+  "keywords": [
+    "portfolio",
+    "data-analyst",
+    "data-science",
+    "sahil-verma"
+  ],
+  "author": "Sahil Verma",
+  "dependencies": {
+    "marked": "^18.0.12"
+  }
+}

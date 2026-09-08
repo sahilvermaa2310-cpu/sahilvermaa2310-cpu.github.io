@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Verma — Data Analyst & Data Science Portfolio</title>
+  <meta name="description" content="Sahil Verma — Data Analyst / Data Science fresher. Python, R, SQL, Power BI, statistical modeling. HDI research, EDA & dashboards." />
+  <meta name="author" content="Sahil Verma" />
+  <meta property="og:title" content="Sahil Verma — Data Analyst Portfolio" />
+  <meta property="og:description" content="Turning data into decisions. Python · R · SQL · Power BI · Statistical Analysis" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="canonical" href="https://sahilvermaa2310-cpu.github.io/" />
+  <meta property="og:url" content="https://sahilvermaa2310-cpu.github.io/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230f172a%22/><text x=%2250%22 y=%2268%22 font-size=%2254%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22>SV</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo" aria-label="Home">
+        <span class="logo-mark">SV</span>
+        <span class="logo-text">Sahil Verma</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Featured</a>
+        <a href="#all-projects">All Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="#" id="resumeLink" class="btn btn-sm btn-primary nav-cta">Resume</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+          <span class="icon-sun">☾</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="dot"></span>
+            <span id="availabilityText">Open to Data Analyst / Junior Data Scientist roles</span>
+            <span class="pill">New Delhi</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="accent">Sahil Verma</span><br/>
+            <span class="typed-wrap">
+              <span id="typed" class="typed"></span><span class="cursor">|</span>
+            </span>
+          </h1>
+          <p class="hero-desc">
+            Data Analyst fresher with a research backbone — I blend <strong>statistics, storytelling & product thinking</strong> to turn messy datasets into clear decisions. From HDI & FLFP research (ANOVA, n=175) to Power BI dashboards and Python EDA at scale.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects →</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+            <a href="#" id="heroResume" class="btn btn-ghost btn-with-icon" aria-label="Download resume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Resume
+            </a>
+          </div>
+          <div class="hero-social" aria-label="Social links">
+            <a href="https://github.com/sahilvermaa2310-cpu" id="heroGithub" target="_blank" rel="noreferrer" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.94c.58.11.79-.25.79-.56v-1.97c-3.2.7-3.88-1.35-3.88-1.35-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18A11.1 11.1 0 0 1 12 6.21a11.1 11.1 0 0 1 2.89.39c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg></a>
+            <a href="https://www.linkedin.com/in/sahil-v-b02620243/" id="heroLinkedin" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.48-2.24-1.67-2.24-1.1 0-1.65.74-1.92 1.46-.1.24-.12.57-.12.9v5.45H9.62s.05-8.84 0-9.76h3.56v1.38c.47-.73 1.32-1.77 3.22-1.77 2.35 0 4.05 1.54 4.05 4.85v5.3ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.56V10.7h3.56v9.75Z"/></svg></a>
+            <a href="mailto:sahil2310verma@gmail.com" id="heroEmail" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg></a>
+            <span class="hero-divider" aria-hidden="true"></span>
+            <span class="hero-meta">Python • R • SQL • Power BI</span>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Public repos</span></div>
+            <div class="stat"><span class="stat-num" data-count="175">0</span><span class="stat-label">Countries in HDI study</span></div>
+            <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Live analyses</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="profile-card">
+            <div class="profile-top">
+              <div class="avatar">
+                <span>SV</span>
+              </div>
+              <div class="profile-meta">
+                <strong>Sahil Verma</strong>
+                <span>Data Analyst</span>
+                <span class="mono">Python · R · SQL · Power BI</span>
+              </div>
+              <span class="status-dot" title="Available for work"></span>
+            </div>
+            <div class="mini-chart" aria-hidden="true">
+              <div class="bars">
+                <span style="height:38%"></span><span style="height:62%"></span><span style="height:48%"></span><span style="height:84%"></span><span style="height:56%"></span><span style="height:72%"></span><span style="height:44%"></span><span style="height:90%"></span>
+              </div>
+              <div class="chart-labels">
+                <span>EDA</span><span>ANOVA</span><span>Power BI</span><span>Python</span>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <div class="code-head"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span>analysis.py</span></div>
+<pre><span class="c"># HDI vs FLFP — ANOVA</span>
+<span class="k">import</span> pandas <span class="k">as</span> pd
+<span class="k">from</span> scipy <span class="k">import</span> stats
+df = pd.read_csv(<span class="s">'flfp_2023.csv'</span>)
+F, p = stats.f_oneway(*[g[<span class="s">'flfp'</span>] <span class="k">for</span> _, g <span class="k">in</span> df.groupby(<span class="s">'hdi_group'</span>)])
+<span class="k">print</span>(<span class="s">f"F={F:.2f}, p={p:.4f}"</span>) <span class="c"># F=3.00, p=0.0319</span></pre>
+            </div>
+            <div class="profile-footer">
+              <span class="badge">📊 Research-driven</span>
+              <span class="badge">🧠 Storytelling</span>
+              <span class="badge">⚡ Fast iterations</span>
+            </div>
+          </div>
+          <!-- floating accents -->
+          <div class="float-card fc1">ANOVA • p = 0.032 ✓</div>
+          <div class="float-card fc2">Power BI Dashboard</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">About</span>
+          <h2>Analyst who loves the <em>why</em> behind the numbers</h2>
+          <p>Economics & data science background with hands-on EDA, statistical inference and dashboarding. I enjoy taking ambiguous questions — “Does development mean progress for everyone?” — and answering them with rigorous data.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a <strong>Data Analyst / Data Science fresher</strong> based in New Delhi, trained in Python, R, SQL and Power BI, with a research focus on <strong>Human Development, inequality and labour markets</strong>. My seminar work on HDI groups and Female Labour Force Participation (175 countries, 2023) used descriptive stats, boxplots, one-way ANOVA and Tukey HSD to show a <em>non-monotonic</em> relationship between development and gendered labour outcomes — a reminder that growth alone isn't the whole story.
+            </p>
+            <p>
+              Beyond research, I ship practical work: cleaning 1M+ row customer data, building RFM & cohort models, and designing Power BI stories stakeholders can actually use. I write clean, documented Python, care about reproducibility, and obsess over clarity in visuals.
+            </p>
+            <div class="about-highlights">
+              <div class="hl"><span class="hl-icon">🎯</span><div><strong>Problem-first</strong><span>Start with the decision, then choose the method.</span></div></div>
+              <div class="hl"><span class="hl-icon">🔍</span><div><strong>Research-grade rigor</strong><span>Assumptions checked, effect sizes reported.</span></div></div>
+              <div class="hl"><span class="hl-icon">📈</span><div><strong>Stakeholder-ready</strong><span>Dashboards & narratives non-technical teams trust.</span></div></div>
+            </div>
+          </div>
+          <div class="about-cards reveal delay-1">
+            <div class="info-card">
+              <h3>What I do</h3>
+              <ul class="check-list">
+                <li>Exploratory Data Analysis & data cleaning (Pandas, SQL)</li>
+                <li>Statistical testing — ANOVA, correlation, hypothesis framing</li>
+                <li>Interactive dashboards — Power BI, Plotly, Excel</li>
+                <li>Reproducible research — Jupyter, R Markdown, Git</li>
+                <li>Storytelling — boxplots, cohorts, RFM, geospatial</li>
+              </ul>
+            </div>
+            <div class="info-card subtle">
+              <h3>Currently exploring</h3>
+              <p>Panel data for FLFP over time · Welch ANOVA robustness · Causal inference basics · Streamlit apps for non-technical users</p>
+              <div class="tags">
+                <span>#OpenToWork</span><span>#DataAnalyst</span><span>#PowerBI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Skills</span>
+          <h2>Toolbox for end-to-end analysis</h2>
+          <p>Categorized for recruiters — scan fast, dive deep when you need to.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon">🐍</span>
+              <h3>Programming</h3>
+            </div>
+            <div class="pill-grid">
+              <span class="pill">Python</span><span class="pill">R</span><span class="pill">SQL</span><span class="pill">JavaScript</span><span class="pill">Bash</span>
+            </div>
+            <ul class="skill-meta">
+              <li>Pandas · NumPy · SciPy</li>
+              <li>Tidyverse · ggplot2</li>
+              <li>Git · Jupyter · VS Code</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal delay-1">
+            <div class="skill-head">
+              <span class="skill-icon">📊</span>
+              <h3>Data Analysis</h3>
+            </div>
+            <div class="pill-grid">
+              <span class="pill">EDA</span><span class="pill">ANOVA</span><span class="pill">Hypothesis Testing</span><span class="pill">Regression</span>
+            </div>
+            <ul class="skill-meta">
+              <li>Descriptive stats · Effect sizes</li>
+              <li>Correlation vs causation framing</li>
+              <li>Data cleaning · 1M+ rows</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal delay-2">
+            <div class="skill-head">
+              <span class="skill-icon">📈</span>
+              <h3>Visualization</h3>
+            </div>
+            <div class="pill-grid">
+              <span class="pill">Power BI</span><span class="pill">Matplotlib</span><span class="pill">Seaborn</span><span class="pill">Plotly</span><span class="pill">Excel</span>
+            </div>
+            <ul class="skill-meta">
+              <li>Boxplots · Cohorts · RFM</li>
+              <li>Dashboards with slicers & DAX</li>
+              <li>Story-first chart choice</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-head">
+              <span class="skill-icon">🗄️</span>
+              <h3>Databases</h3>
+            </div>
+            <div class="pill-grid">
+              <span class="pill">PostgreSQL</span><span class="pill">MySQL</span><span class="pill">Excel / Sheets</span><span class="pill">CSV / Parquet</span>
+            </div>
+            <ul class="skill-meta">
+              <li>Joins · CTEs · Window fns</li>
+              <li>ETL & data modeling basics</li>
+              <li>PostGIS exposure</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal delay-1">
+            <div class="skill-head">
+              <span class="skill-icon">🧰</span>
+              <h3>Tools & Workflow</h3>
+            </div>
+            <div class="pill-grid">
+              <span class="pill">Git/GitHub</span><span class="pill">Jupyter</span><span class="pill">VS Code</span><span class="pill">Power Query</span>
+            </div>
+            <ul class="skill-meta">
+              <li>Reproducible notebooks</li>
+              <li>Versioning & collaboration</li>
+              <li>LaTeX for research papers</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal delay-2">
+            <div class="skill-head">
+              <span class="skill-icon">💬</span>
+              <h3>Strengths</h3>
+            </div>
+            <div class="pill-grid">
+              <span class="pill">Storytelling</span><span class="pill">Research</span><span class="pill">Attention to detail</span>
+            </div>
+            <ul class="skill-meta">
+              <li>Economics & public policy context</li>
+              <li>Clear docs & stakeholder comms</li>
+              <li>Curious · Fast learner · Ownership</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="levels reveal">
+          <div class="level">
+            <div class="level-head"><span>Python (Pandas, Analysis)</span><span>90%</span></div>
+            <div class="bar"><span style="width:90%"></span></div>
+          </div>
+          <div class="level">
+            <div class="level-head"><span>SQL & Data Wrangling</span><span>85%</span></div>
+            <div class="bar"><span style="width:85%"></span></div>
+          </div>
+          <div class="level">
+            <div class="level-head"><span>Power BI / Visualization</span><span>88%</span></div>
+            <div class="bar"><span style="width:88%"></span></div>
+          </div>
+          <div class="level">
+            <div class="level-head"><span>Statistics (ANOVA, Testing)</span><span>82%</span></div>
+            <div class="bar"><span style="width:82%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Featured Projects</span>
+          <h2>Standalone case studies — no GitHub needed</h2>
+          <p>Each project has a dedicated page on <strong>this site</strong> with purpose, methodology, tech stack, results and screenshots — all from the actual repository README. <strong>View Project</strong> opens the standalone page; <strong>View Source</strong> is optional. New repos automatically get a page.</p>
+        </div>
+
+        <div id="featuredGrid" class="projects-grid featured-grid" aria-live="polite" aria-busy="false">
+          <!-- injected by JS — top 2 relevance-ranked real repos -->
+        </div>
+        <div class="projects-foot reveal" style="margin-top:14px">
+          <a href="/projects/global-catastrophe-risk-analytics/" class="btn btn-primary btn-sm">Explore Global-Catastrophe-Risk-Analytics →</a>
+          <a href="/#all-projects" class="btn btn-ghost btn-sm">See All Projects ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALL PROJECTS -->
+    <section id="all-projects" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">All Projects</span>
+          <h2>All public repositories — live & auto-updating</h2>
+          <p>Fetched from <a href="https://github.com/sahilvermaa2310-cpu" target="_blank" rel="noreferrer">sahilvermaa2310-cpu</a> via public GitHub API (unauthenticated). Strongest data/economics work first — less relevant still visible. Click <strong>View Project</strong> for the standalone case study, <strong>View Source</strong> for GitHub. If you add a 5th repo, it appears here automatically with its own clean URL <code class="mono">/projects/&lt;repo&gt;/</code>.</p>
+        </div>
+
+        <div class="projects-controls reveal">
+          <div class="control-group">
+            <label for="ghUsername" class="mono-label">GitHub profile — auto-synced</label>
+            <div class="input-row">
+              <input id="ghUsername" type="text" value="sahilvermaa2310-cpu" spellcheck="false" autocomplete="off" readonly title="Auto-loaded from sahilvermaa2310-cpu — updates when you push a new public repo" style="background:var(--bg-alt); font-weight:600" />
+              <button id="ghFetchBtn" class="btn btn-primary btn-sm">Refresh ↻</button>
+            </div>
+            <span id="ghStatus" class="mono-hint">Fetching all public repos… auto-sync enabled, updates automatically</span>
+          </div>
+          <div class="control-group">
+            <label for="projectSearch" class="mono-label">Search & filter <span id="repoCountBadge" class="pill" style="text-transform:none; letter-spacing:0; font-family:Inter; font-size:11px; padding:2px 8px; margin-left:6px; background:#fff; border:1px solid var(--line)">—</span></label>
+            <div class="input-row">
+              <input id="projectSearch" type="search" placeholder="Search by name, description, topic..." />
+              <select id="langFilter" aria-label="Filter by language">
+                <option value="">All languages</option>
+              </select>
+              <select id="sortFilter" aria-label="Sort projects">
+                <option value="relevance">Relevance (strongest first)</option>
+                <option value="updated">Last updated</option>
+                <option value="stars">Most starred</option>
+                <option value="name">Name A–Z</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="projectsGrid" class="projects-grid" aria-live="polite" aria-busy="false">
+          <!-- injected by JS — all 4 real repos from sahilvermaa2310-cpu -->
+        </div>
+
+        <div id="projectsEmpty" class="empty hidden">
+          <p>No projects match your search.</p>
+          <button id="clearFilterBtn" class="btn btn-ghost btn-sm">Clear filters</button>
+        </div>
+
+        <div class="projects-foot reveal">
+          <p class="mono-hint">Every card is from the live GitHub API + standalone project page. Clean URLs like <code>/projects/global-catastrophe-risk-analytics/</code> are SEO-friendly and don’t require GitHub to understand the work.</p>
+          <a id="viewAllGithub" href="https://github.com/sahilvermaa2310-cpu?tab=repositories" target="_blank" rel="noreferrer" class="btn btn-ghost btn-sm">View All on GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / EDUCATION -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Experience & Education</span>
+          <h2>Where I've learned and shipped</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3>Seminar Research — Human Development & FLFP</h3>
+                <span class="tl-meta">Independent Research · 2024 — 2025 · New Delhi</span>
+              </div>
+              <p>Led end-to-end analysis on 175 countries (World Bank WDI 2023): cleaned ILO estimates, ran one-way ANOVA + Tukey HSD, built publication-grade boxplots and LaTeX report (15+ pages). Finding: FLFP is <em>non-monotonic</em> across HDI groups (F=3.00, p=0.032, η²=0.05); only High vs Very-High difference significant.</p>
+              <div class="tags"><span>Python</span><span>R</span><span>ANOVA</span><span>LaTeX</span><span>Research</span></div>
+            </div>
+            <span class="tl-date">2025</span>
+          </div>
+
+          <div class="tl-item reveal delay-1">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3>Data Analyst — Projects & Dashboards</h3>
+                <span class="tl-meta">Self-driven & Freelance · 2023 — Present</span>
+              </div>
+              <p>Built Power BI dashboards (customer segmentation, disaster events — 10k+ rows, geospatial & damage modeling), EDA notebooks for retail & synthetic datasets, and SQL pipelines in PostgreSQL. Focus on stakeholder-ready visuals and reproducible notebooks.</p>
+              <div class="tags"><span>Power BI</span><span>SQL</span><span>Pandas</span><span>Dashboard</span></div>
+            </div>
+            <span class="tl-date">2023→</span>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3>Bachelor's — Economics (Hons) </h3>
+                <span class="tl-meta">University of Delhi · 2022 — 2025</span>
+              </div>
+              <p>Core: Micro/Macro, Econometrics, Statistics, Development Economics. Built foundation in STATA/R, hypothesis testing, and research writing. Active in seminar presentations and data-driven coursework.</p>
+              <div class="tags"><span>Economics</span><span>Econometrics</span><span>Statistics</span></div>
+            </div>
+            <span class="tl-date">2025</span>
+          </div>
+
+          <div class="tl-item reveal delay-1">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3>Certifications & Learning</h3>
+                <span class="tl-meta">Ongoing</span>
+              </div>
+              <p>Google Data Analytics · SQLZoo & Mode Analytics SQL · Power BI (Microsoft) · Python for Data Science. Continuously shipping on GitHub and Kaggle.</p>
+              <div class="tags"><span>Google</span><span>Microsoft</span><span>Kaggle</span></div>
+            </div>
+            <span class="tl-date">2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Contact</span>
+          <h2>Let's build something data-driven</h2>
+          <p>Open to Data Analyst, Junior Data Scientist and Research Analyst roles. Fast replies — reach out and I'll respond within a day.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="cName">Name</label>
+              <input id="cName" name="name" type="text" placeholder="Your name" required autocomplete="name" />
+              <span class="field-error" id="eName"></span>
+            </div>
+            <div class="form-row">
+              <label for="cEmail">Email</label>
+              <input id="cEmail" name="email" type="email" placeholder="you@company.com" required autocomplete="email" />
+              <span class="field-error" id="eEmail"></span>
+            </div>
+            <div class="form-row">
+              <label for="cMessage">Message</label>
+              <textarea id="cMessage" name="message" rows="5" placeholder="Tell me about the role / project..." required></textarea>
+              <span class="field-error" id="eMessage"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message →</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+            <p class="mono-hint">Form opens your email client — no data stored on a server. Prefer direct email? Use the address on the right.</p>
+          </form>
+
+          <div class="contact-aside reveal delay-1">
+            <div class="aside-card">
+              <h3>Reach me</h3>
+              <ul class="contact-list">
+                <li><span class="c-icon">✉️</span><a id="contactEmail" href="mailto:sahil2310verma@gmail.com">sahil2310verma@gmail.com</a></li>
+                <li><span class="c-icon">📍</span><span id="contactLocation">New Delhi, India</span></li>
+                <li><span class="c-icon">💼</span><a id="contactLinkedin" href="https://www.linkedin.com/in/sahil-v-b02620243/" target="_blank" rel="noreferrer">LinkedIn — Sahil Verma</a></li>
+                <li><span class="c-icon">⭐</span><a id="contactGithub" href="https://github.com/sahilvermaa2310-cpu" target="_blank" rel="noreferrer">GitHub — sahilvermaa2310-cpu</a></li>
+              </ul>
+              <div class="aside-actions">
+                <a href="#" id="asideResume" class="btn btn-primary btn-sm btn-block">Download Resume (PDF)</a>
+                <a href="mailto:sahil2310verma@gmail.com" class="btn btn-ghost btn-sm btn-block">Email directly</a>
+              </div>
+            </div>
+            <div class="aside-card subtle">
+              <h3>What happens next?</h3>
+              <ol class="steps">
+                <li>You send a message (or email)</li>
+                <li>I reply within 24h with availability & next steps</li>
+                <li>We hop on a quick call to scope the work</li>
+              </ol>
+              <p class="mono-hint">P.S. Recruiters — ask me about the HDI study notebook, I can walk through the ANOVA live.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="logo-mark sm">SV</span>
+        <span>© <span id="year"></span> Sahil Verma · <a href="https://github.com/sahilvermaa2310-cpu" target="_blank" rel="noreferrer">sahilvermaa2310-cpu</a> · Built with vanilla HTML/CSS/JS · Vite · <span class="mono">Fast · Accessible · Responsive</span></span>
+      </div>
+      <div class="footer-right">
+        <a href="#main" class="to-top" aria-label="Back to top">↑ Top</a>
+        <a href="https://github.com/sahilvermaa2310-cpu" id="footerGithub" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/sahil-v-b02620243/" id="footerLinkedin" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

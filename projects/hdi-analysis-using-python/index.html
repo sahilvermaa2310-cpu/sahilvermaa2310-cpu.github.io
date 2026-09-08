@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HDI-Analysis-Using-Python — Sahil Verma | Data Analyst Portfolio</title>
+  <meta name="description" content="Statistical analysis of the Human Development Index (HDI) using Python. The project includes data preprocessing, ANOVA, data visualization, and insights into global development patterns using UNDP data." />
+  <meta name="author" content="Sahil Verma" />
+  <link rel="canonical" href="https://sahilvermaa2310-cpu.github.io/projects/hdi-analysis-using-python/" />
+  <meta property="og:title" content="HDI-Analysis-Using-Python — Sahil Verma" />
+  <meta property="og:description" content="Statistical analysis of the Human Development Index (HDI) using Python. The project includes data preprocessing, ANOVA, data visualization, and insights into global development patterns using UNDP data." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://github.com/sahilvermaa2310-cpu/HDI-Analysis-Using-Python" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/project.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230f172a%22/><text x=%2250%22 y=%2268%22 font-size=%2254%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22>SV</text></svg>">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sahilvermaa2310-cpu.github.io/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://sahilvermaa2310-cpu.github.io/#projects"},{"@type":"ListItem","position":3,"name":"HDI-Analysis-Using-Python"}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="/" class="logo" aria-label="Home">
+        <span class="logo-mark">SV</span>
+        <span class="logo-text">Sahil Verma</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="/#about">About</a>
+        <a href="/#skills">Skills</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#experience">Experience</a>
+        <a href="/#contact">Contact</a>
+        <a href="/" class="btn btn-sm btn-primary nav-cta">← Back to Portfolio</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="project-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a> <span>›</span> <a href="/#projects">Projects</a> <span>›</span> <span aria-current="page">HDI-Analysis-Using-Python</span>
+        </nav>
+        <div class="project-hero-grid">
+          <div>
+            <div class="kicker" style="margin-bottom:12px">Project • HTML • Updated 9 July 2026</div>
+            <h1 class="project-title">HDI-Analysis-Using-Python</h1>
+            <p class="project-desc">Statistical analysis of the Human Development Index (HDI) using Python. The project includes data preprocessing, ANOVA, data visualization, and insights into global development patterns using UNDP data.</p>
+            <div class="project-meta">
+              <span class="meta-pill">★ 0 stars</span>
+              <span class="meta-pill">⑂ 0 forks</span>
+              <span class="meta-pill">Updated 9 July 2026</span>
+              
+            </div>
+            <div class="hero-actions" style="margin-top:16px">
+              
+              <a href="https://github.com/sahilvermaa2310-cpu/HDI-Analysis-Using-Python" target="_blank" rel="noreferrer" class="btn btn-primary">View Source on GitHub ↗</a>
+              <a href="/" class="btn btn-ghost">← Back to Home</a>
+            </div>
+            <p class="mono-hint" style="margin-top:8px">You’re viewing the full project on this site — no need to open GitHub. Source link is optional.</p>
+          </div>
+          <div class="project-hero-card">
+            <h3>At a glance</h3>
+            <dl>
+              <div><dt>Primary language</dt><dd>HTML</dd></div>
+              <div><dt>Languages</dt><dd><div class="pill-grid" style="margin-top:6px"><span class="pill">HTML</span></div></dd></div>
+              <div><dt>Created</dt><dd>Jul 2026</dd></div>
+              <div><dt>Last update</dt><dd>9 July 2026</dd></div>
+              <div><dt>License</dt><dd>See repository</dd></div>
+            </dl>
+            <div class="hero-card-actions">
+              <a href="https://github.com/sahilvermaa2310-cpu/HDI-Analysis-Using-Python" target="_blank" rel="noreferrer" class="btn btn-ghost btn-sm btn-block">Open on GitHub</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container project-layout">
+      <article class="project-main">
+        
+        
+      <section class="project-section">
+        <h2>Method & honesty</h2>
+        <p class="lead">Clean UNDP 2023 annex → tiers (Low ≤0.55, Medium 0.55–0.70, High 0.70–0.80, Very High >0.80) → one-way ANOVA (<code>scipy.stats.f_oneway</code>) + boxplot. The README notes the circularity of testing HDI across HDI-defined tiers — presented as a QA sanity check, with suggested next step: HDI vs GNI rank gap.</p>
+        <div class="tech-grid">
+          <div class="tech-card"><h3>Data</h3><p>UNDP HDR 2025 Statistical Annex, Table 1 — Country + HDI 2023, file <code>data/HDR25_Statistical_Annex_HDI_Table.xlsx</code></p></div>
+          <div class="tech-card"><h3>Stack</h3><p>Python · pandas · scipy · matplotlib — notebook <code>hdi_analysis.ipynb</code></p></div>
+          <div class="tech-card"><h3>Visualization</h3><p>Boxplot per tier — shows High tier has widest dispersion, Very High most concentrated.</p></div>
+        </div>
+      </section>
+    
+        
+        <section class="project-section readme-section">
+          <h2>Full README — from GitHub</h2>
+          <p class="mono-hint">Source: <a href="https://github.com/sahilvermaa2310-cpu/HDI-Analysis-Using-Python/blob/main/README.md" target="_blank" rel="noreferrer">README.md on GitHub</a> — rendered here for convenience. No fake content.</p>
+          <div class="readme-content">
+            <p>HDI Distribution Analysis (UNDP 2023 Data)</p>
+<p>Objective</p>
+<p>Examine whether countries&#39; Human Development Index (HDI) scores differ significantly
+across development tiers (Low / Medium / High / Very High), using UNDP&#39;s 2023
+Human Development Report statistical annex as the source dataset.</p>
+<p>Data</p>
+<p>Source: UNDP Human Development Report 2025 — Statistical Annex, Table 1 (HDI and components)
+Fields used: Country, HDI value (2023)
+File: data/HDR25_Statistical_Annex_HDI_Table.xlsx</p>
+<p>Method</p>
+<p>Loaded and cleaned the raw annex file (removed header/footer rows, coerced HDI to numeric, dropped nulls).
+Segmented countries into four development tiers based on standard UNDP HDI cutoffs:</p>
+<p>Low: HDI ≤ 0.55
+Medium: 0.55–0.70
+High: 0.70–0.80
+Very High: &gt; 0.80</p>
+<p>Ran a one-way ANOVA (scipy.stats.f_oneway) to test whether mean HDI differs across tiers.
+Visualized the distribution within each tier using a boxplot.</p>
+<p>Result</p>
+<p>F-statistic and p-value confirm HDI differs significantly across tiers (as expected, since
+the tiers are themselves defined by HDI value — this step is primarily a data-QA / sanity
+check that the UNDP tier cutoffs cleanly separate the dataset, rather than a novel finding).
+Boxplot shows spread and outliers within each tier — e.g. dispersion is visibly wider in
+the &quot;High&quot; tier than in &quot;Very High,&quot; suggesting more heterogeneity among mid-tier countries.</p>
+<p>Honest limitation / next step</p>
+<p>Grouping by HDI and then testing for HDI differences across groups is somewhat circular.
+A more informative follow-up (not yet done here) would be to test HDI against an independent
+variable — e.g. correlating HDI with GNI per capita, and identifying countries where the
+GNI-rank-minus-HDI-rank gap is largest (i.e., countries that over- or under-perform their
+income level on human development). That column already exists in the raw dataset and is a
+natural extension of this analysis.</p>
+<p>Tech stack</p>
+<p>Python, pandas, scipy, matplotlib</p>
+<p>Files</p>
+<p>hdi_analysis.ipynb — analysis notebook
+data/ — raw UNDP source file</p>
+
+          </div>
+        </section>
+      </article>
+
+      <aside class="project-aside">
+        <div class="aside-card">
+          <h3>Technologies</h3>
+          <div class="pill-grid"><span class="pill">HTML</span></div>
+          <p class="mono-hint" style="margin-top:10px">Stack inferred from repository languages & description — no invented tech.</p>
+        </div>
+        <div class="aside-card">
+          <h3>Links</h3>
+          <ul class="link-list">
+            <li><a href="https://github.com/sahilvermaa2310-cpu/HDI-Analysis-Using-Python" target="_blank" rel="noreferrer">View Source on GitHub ↗</a></li>
+            <li class="muted">No separate deployed app — this page is the live project view.</li>
+            <li><a href="/#projects">← All Projects</a></li>
+            <li><a href="/">← Back to Portfolio Home</a></li>
+          </ul>
+        </div>
+        <div class="aside-card subtle">
+          <h3>For recruiters</h3>
+          <p>This page is <strong>standalone</strong> — you don’t need to open GitHub to evaluate the project. Methodology, results and visuals are explained here; GitHub is only for source audit.</p>
+          <div class="tags"><span>PostgreSQL</span><span>PostGIS</span><span>Power BI</span><span>Python</span><span>R</span></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="logo-mark sm">SV</span>
+        <span>© <span id="year"></span> Sahil Verma · <a href="https://github.com/sahilvermaa2310-cpu" target="_blank" rel="noreferrer">sahilvermaa2310-cpu</a></span>
+      </div>
+      <div class="footer-right">
+        <a href="/">Home</a>
+        <a href="https://github.com/sahilvermaa2310-cpu/HDI-Analysis-Using-Python" target="_blank" rel="noreferrer">GitHub Source</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const hb=document.getElementById('hamburger'), nl=document.getElementById('navLinks');
+    hb&&hb.addEventListener('click',()=>{const o=nl.classList.toggle('open');hb.setAttribute('aria-expanded',String(o))});
+  </script>
+</body>
+</html>
