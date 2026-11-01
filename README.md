@@ -1,4 +1,4 @@
-# Sahil Verma — Data Analyst Portfolio
+# Sahil Verma — Data Analyst Portfolio - Website
 
 Modern, fast, accessible portfolio for a Data Analyst / Data Science fresher — built with vanilla HTML/CSS/JS + Vite.
 
