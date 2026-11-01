@@ -61,4 +61,4 @@ portfolio/
 `npm run build` → upload `dist/` to GitHub Pages / Netlify / Vercel. For GitHub Pages, set `base` in `vite.config.js` if repo is not root.
 
 ---
-Built for Sahil Verma — HDI research, Power BI, Python/R/SQL.
+Sahil Verma 
